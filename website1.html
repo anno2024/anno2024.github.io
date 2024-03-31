@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksel idiot Lindberg</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: white;
+            width: 50%;
+            max-width: 600px;
+            position: relative; /* Ensure the container can properly position the arrow */
+        }
+        h1 {
+            color: #333;
+            font-size: 2rem;
+        }
+        p {
+            color: #666;
+        }
+        /* Updated CSS for arrow animation */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .arrow {
+            display: inline-block;
+            font-size: 2rem; /* Adjust the size of the arrow */
+            animation: bounce 1s infinite;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            margin-top: -50px; /* Adjust this based on your layout */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="arrow">↓</div> <!-- Arrow correctly positioned now -->
+        <h1>Du e helt idiot</h1>
+        <img src="Aksel.PNG" alt="Example Image" style="max-width: 100%; height: auto; margin-top: 20px;">
+    </div>
+</body>
+</html>
